@@ -1,0 +1,30 @@
+html{
+    background-color: lightgray;
+    color: rgb(5, 4, 4);
+}
+.star{
+    animation: slideSpin 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 25%;
+    height: auto;
+}
+@keyframes slideSpin{
+    50%{
+        transform: translateX(150%) scale(.5);
+    }
+    75%{
+        transform: translateX(150%) rotate(180deg) scale(.5);
+    }
+    100%{
+        transform: translateX(300%) rotate(180deg);
+    }
+}
+.back-to-the-homepage{
+    font-size: large;
+    text-align: left;
+}
+.back-to-the-homepage:hover{
+    color: black;
+}
