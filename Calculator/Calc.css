@@ -1,0 +1,148 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:"overlap";
+}
+.calculatorOutbox {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px 3px #e9e9e9;
+    background: #000000;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border: 3px solid #aaa;
+    border-radius: 6px;
+    font-size: 0.9em;
+    background-color: #fafafa;
+    margin-top: 3%;
+    margin-left: 34%;
+    height: 95%;
+    width: 30%;
+    grid-area: overlap;
+}
+.inputBox{
+    color: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 3px 3px #e9e9e9;
+    background-color: #322e2e;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    font-size: 3em;
+    margin-top: 4%;
+    margin-left: 36%;
+    height: 20%;
+    width: 26.5%;
+    grid-area: overlap;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align: right;
+}
+.inputBox .prev-num{
+    color: rgba(225, 225, 225, .75);
+    font-size: 1.5rem;
+}
+.inputBox .current-num{
+    color: white;
+    font-size: 2.5rem;
+}
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .zero, .multiply, .divide, .plus, .minus, .equal, .clear{
+    box-sizing: border-box;
+    background: #000000;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    font-size: 3rem;
+    background-color: #fafafa;
+    height: 15%;
+    width: 6%;
+    text-align: center;
+    grid-area: overlap;
+}
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover, .eight:hover, .nine:hover, .zero:hover, .equal:hover, .clear:hover, .multiply:hover, .divide:hover, .plus:hover, .minus:hover{
+    background-color: rgb(198, 198, 198);
+    cursor: pointer;
+}
+.seven{
+    margin-top: 12%;
+    margin-left: 36%;
+}
+.eight{
+    margin-top: 12%;
+    margin-left: 43%;
+}
+.nine{
+    margin-top: 12%;
+    margin-left: 50%;
+}
+.four{
+    margin-top: 18%;
+    margin-left: 36%;
+}
+.five{
+    margin-top: 18%;
+    margin-left: 43%;
+}
+.six{
+    margin-top: 18%;
+    margin-left: 50%;
+}
+.one{
+    margin-top: 24%;
+    margin-left: 36%;
+}
+.two{
+    margin-top: 24%;
+    margin-left: 43%;
+}
+.three{
+    margin-top: 24%;
+    margin-left: 50%;
+}
+.zero{
+    margin-top: 30%;
+    margin-left: 43%;
+}
+.clear{
+    margin-top: 30%;
+    margin-left: 36%;
+}
+.equal{
+    margin-top: 30%;
+    margin-left: 50%;
+}
+.divide{
+    margin-top: 12%;
+    margin-left: 57%;
+}
+.multiply{
+    margin-top: 18%;
+    margin-left: 57%;
+}
+.minus{
+    margin-top: 24%;
+    margin-left: 57%;
+}
+.plus{
+    margin-top: 30%;
+    margin-left: 57%;
+}
+html{
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+    font-size: 2rem;
+    color: rgb(233, 179, 91);
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.pressed{
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+    background-color: #000000;
+}
