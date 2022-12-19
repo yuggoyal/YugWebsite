@@ -13,10 +13,10 @@
     border-radius: 6px;
     font-size: 0.9em;
     background-color: #fafafa;
-    margin-top: 3%;
-    margin-left: 34%;
-    height: 95%;
-    width: 30%;
+    margin-top: 1.7%;
+    margin-left: 34.4%;
+    height: 97.2%;
+    width: 35.7%;
     grid-area: overlap;
 }
 .inputBox{
@@ -28,10 +28,10 @@
     border: 1px solid rgb(0, 0, 0);
     border-radius: 4px;
     font-size: 3em;
-    margin-top: 4%;
+    margin-top: 3%;
     margin-left: 36%;
     height: 20%;
-    width: 26.5%;
+    width: 32.5%;
     grid-area: overlap;
     word-wrap: break-word;
     word-break: break-all;
@@ -45,7 +45,7 @@
     color: white;
     font-size: 2.5rem;
 }
-.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .zero, .multiply, .divide, .plus, .minus, .equal, .clear{
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .zero, .multiply, .divide, .minus, .equal, .clear, .dubzero, .decimal, .Del{
     box-sizing: border-box;
     background: #000000;
     padding: 0.5em 0.5em 0.5em 0.5em;
@@ -53,12 +53,12 @@
     border-radius: 6px;
     font-size: 3rem;
     background-color: #fafafa;
-    height: 15%;
+    height: 16%;
     width: 6%;
     text-align: center;
     grid-area: overlap;
 }
-.one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover, .eight:hover, .nine:hover, .zero:hover, .equal:hover, .clear:hover, .multiply:hover, .divide:hover, .plus:hover, .minus:hover{
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover, .eight:hover, .nine:hover, .zero:hover, .equal:hover, .clear:hover, .multiply:hover, .divide:hover, .plus:hover, .minus:hover, .Del:hover, .dubzero:hover, .decimal.hover{
     background-color: rgb(198, 198, 198);
     cursor: pointer;
 }
@@ -68,66 +68,91 @@
 }
 .eight{
     margin-top: 12%;
-    margin-left: 43%;
+    margin-left: 42.5%;
 }
 .nine{
     margin-top: 12%;
-    margin-left: 50%;
+    margin-left: 49.12%;
 }
 .four{
-    margin-top: 18%;
+    margin-top: 18.85%;
     margin-left: 36%;
 }
 .five{
-    margin-top: 18%;
-    margin-left: 43%;
+    margin-top: 18.85%;
+    margin-left: 42.5%;
 }
 .six{
-    margin-top: 18%;
-    margin-left: 50%;
+    margin-top: 18.85%;
+    margin-left: 49.12%;
 }
 .one{
-    margin-top: 24%;
+    margin-top: 25.7%;
     margin-left: 36%;
 }
 .two{
-    margin-top: 24%;
-    margin-left: 43%;
+    margin-top: 25.7%;
+    margin-left: 42.5%;
 }
 .three{
-    margin-top: 24%;
-    margin-left: 50%;
+    margin-top: 25.7%;
+    margin-left: 49.12%;
 }
 .zero{
-    margin-top: 30%;
-    margin-left: 43%;
+    margin-top: 32.55%;
+    margin-left: 42.5%;
 }
-.clear{
-    margin-top: 30%;
+.dubzero{
+    margin-top: 32.55%;
     margin-left: 36%;
 }
-.equal{
-    margin-top: 30%;
-    margin-left: 50%;
+.decimal{
+    margin-top: 32.55%;
+    margin-left: 49.12%;
 }
 .divide{
     margin-top: 12%;
-    margin-left: 57%;
+    margin-left: 55.77%;
 }
 .multiply{
-    margin-top: 18%;
-    margin-left: 57%;
+    margin-top: 18.85%;
+    margin-left: 55.77%;
 }
 .minus{
-    margin-top: 24%;
-    margin-left: 57%;
+    margin-top: 25.7%;
+    margin-left: 55.77%;
 }
 .plus{
-    margin-top: 30%;
-    margin-left: 57%;
+    margin-top: 18.85%;
+    margin-left: 62.5%;
+    height: 33%;
+    width: 6%;
+    box-sizing: border-box;
+    background: #000000;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    font-size: 3rem;
+    background-color: #fafafa;
+    text-align: center;
+    grid-area: overlap;
 }
-html{
-    background: linear-gradient(to right, #00AAFF, #00FF6C);
+.Del{
+    margin-top: 12%;
+    margin-left: 62.5%;
+    font-size: 225%;
+}
+.clear{
+    margin-top: 32.55%;
+    margin-left: 55.77%;
+    font-size: 225%;
+}
+.equal{
+    margin-top: 32.55%;
+    margin-left: 62.5%;
+}
+body{
+    background: #ffffff url(background.jpg);
 }
 h1{
     text-align: center;
@@ -140,9 +165,4 @@ h1{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-}
-.pressed{
-    box-shadow: 0 3px 4px 0 #DBEDF3;
-    opacity: 0.5;
-    background-color: #000000;
 }

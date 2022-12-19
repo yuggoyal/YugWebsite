@@ -8,37 +8,22 @@ function eventListenerFunction()
 {
     buttonInnerHTML = this.innerHTML;
     switch (buttonInnerHTML) {
-        case "/":
-            ClickedOnOperator(buttonInnerHTML)
-            break;
-        case "X":
-            ClickedOnOperator(buttonInnerHTML)
-            break;
-        case "-":
-            ClickedOnOperator(buttonInnerHTML)
-            break;
-        case "+":
-            ClickedOnOperator(buttonInnerHTML)
-            break;
+        
         case "AC":
             ClickedOnReset(buttonInnerHTML)
             break;
         case "=":
             DiplayResult(buttonInnerHTML)
             break;
-        default: //for 1-9 and 0
+        case "Del":
+            ClickedOnDelete(buttonInnerHTML)
+            break;
+        default: //for 1-9, 0, -, +, x, /, .
             ClickedOnNumber(buttonInnerHTML)
-       // buttonAnimation(buttonInnerHTML) 
     }
 }
 
 function ClickedOnNumber(buttonInnerHTML) //This function will be called when clicked on 1-9 and 0
-{
-    output += buttonInnerHTML;
-    out1 = document.getElementsByClassName("inputBox");
-}
-
-function ClickedOnOperator(buttonInnerHTML) //This function will be called when clicked on '/', 'X', '-', '+'
 {
     output += buttonInnerHTML;
 }
@@ -47,7 +32,9 @@ function ClickedOnReset(buttonInnerHTML) //This function will be called when cli
 {
     output = '';
 }
-
+function ClickedOnDelete(buttonInnerHTML){
+    output = output.substring(0,output.length-1);
+}
 function DiplayResult(buttonInnerHTML) //This function will be called when clicked '='
 {
     var lengthOfOutput = output.length;
@@ -61,11 +48,11 @@ function DiplayResult(buttonInnerHTML) //This function will be called when click
         if((output[i] == '/') || (output[i] == 'x') || (output[i] == '-') || (output[i] == '+')){
             if(operator == ''){
                 operator = output[i];
-                num1 = parseInt(tempstr);
+                num1 = parseFloat(tempstr);
                 tempstr = '';
             }
             else{
-                num2 = parseInt(tempstr);
+                num2 = parseFloat(tempstr);
                 tempstr = '';
 
                 //do calculation
@@ -85,7 +72,7 @@ function DiplayResult(buttonInnerHTML) //This function will be called when click
         else
             tempstr = tempstr + output[i]
     }
-    num2 = parseInt(tempstr);
+    num2 = parseFloat(tempstr);
 
     
     if(operator == 'x')
